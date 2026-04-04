@@ -73,9 +73,16 @@ h1 {
 #QR_code {
   position: fixed;
   bottom: 2vw;
-  right: 2vw; 
+  right: -180px; 
   width: 225px; 
   height: auto;
   z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transition: right 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+container:hover#QR_code {
+right: 2vw;
 }
 
