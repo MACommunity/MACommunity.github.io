@@ -17,7 +17,7 @@ body {
   background: url('') no-repeat center center;
   background-size: cover;
   
-  background-color: #1e1e2f;
+  background-color: #4e4e82;
 }
 
 body::before {
@@ -74,7 +74,7 @@ h1 {
   position: fixed;
   bottom: 2vw;
   right: 2vw; 
-  width: 500px; 
+  width: 225px; 
   height: auto;
   z-index: 1000;
 }
