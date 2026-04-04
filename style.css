@@ -82,7 +82,7 @@ h1 {
   cursor: pointer;
 }
 
-container:hover#QR_code {
+#QR_code.active {
 right: 2vw;
 }
 
