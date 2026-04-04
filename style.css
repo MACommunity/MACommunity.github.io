@@ -16,6 +16,8 @@ body {
 
   background: url('images/tempBG.jpg') no-repeat center center;
   background-size: cover;
+  filter: blur(10px);     
+  z-index: -1; 
 
   background-color: #1e1e2f;
 }
