@@ -6,12 +6,18 @@
 }
 
 body {
-  background: linear-gradient(135deg, #1e1e2f, #3a3a6a);
-  color: white;
+  height: 100vh;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: Geologica, sans-serif;
+
+  background:('images/X_pfp.jpg') no-repeat center center;
+  background-size: cover;
+
+  background-color: #1e1e2f;
 }
 
 .container {
