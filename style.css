@@ -68,10 +68,4 @@ h1 {
   height: auto;
   z-index: 1000;
 }
-@media (max-width: 200px) {
-  #QR_code {
-    width: 50px;
-    bottom: 10px;
-    right: 10px;
-  }
-}
+
