@@ -76,10 +76,10 @@ h1 {
   right: -180px; 
   width: 225px; 
   height: auto;
-  filter: blur(10px); 
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   transition: right 0.3s ease-in-out;
+  filter: blur(10px); 
   cursor: pointer;
 }
 
