@@ -46,12 +46,14 @@ body::before {
 
 h1 {
   margin-bottom: 5px;
+  color: #f2f2f2;
 }
 
 .bio {
   margin-bottom: 20px;
   color: #ccc;
 }
+
 
 .links a {
   display: block;
