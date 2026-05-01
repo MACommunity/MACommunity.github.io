@@ -14,18 +14,11 @@ body {
   height: 100vh;
   font-family: Geologica, sans-serif;
   position: relative;
-  background: url('./images/MACtreeBG.png') no-repeat center center;
+  background: url('./images/MOBILEtreeBG.png') no-repeat center center;
   background-size: cover;
   
   background-color: #4e4e82;
 }
-
-@media (max-width: 768px) {
-  body {
-    background: url('./images/MOBILEtreeBG.png') no-repeat center center;
-    background-size: cover;
-    }
-  }
 
 body::before {
   content: "";
