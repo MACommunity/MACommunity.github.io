@@ -20,6 +20,13 @@ body {
   background-color: #4e4e82;
 }
 
+@media (max-width: 768px) {
+  body {
+    background: url('./images/MOBILEtreeBG.png') no-repeat center center;
+    background-size: cover;
+    }
+  }
+
 body::before {
   content: "";
   position: fixed;
