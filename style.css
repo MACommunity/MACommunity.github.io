@@ -22,7 +22,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background: url('./images/MOBILEtreeBG.png') no-repeat center center;
+    background: red;
     background-size: cover;
     }
   }
