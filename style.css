@@ -11,10 +11,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   font-family: Geologica, sans-serif;
   position: relative;
-  background: url('./images/MACtreeBG.png') no-repeat center center;
+  background: url('./images/MAC_BG_Empty.png') no-repeat center center;
   background-size: cover;
   
   background-color: #4e4e82;
@@ -28,14 +27,14 @@ body::before {
   width: 100%;
   height: auto;
   filter: blur(10px);     
-  z-index: -1; 
+  z-index: -3; 
 }
 
 .container {
   text-align: center;
   width: 90%;
   max-width: 400px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .avatar {
@@ -90,3 +89,35 @@ right: 2vw;
 filter: blur(0px);  
 }
 
+#charFront {
+  position: fixed;
+  width: 25%;
+  height: auto;
+  bottom: 0px;
+  right: 50px;
+  transform: translateY(35%);
+  filter:drop-shadow(0 5px 20px rgba(0,0,0,0.5))
+}
+
+@media (max-width: 768px) {
+  body {
+    display: block;
+    padding: 20px;
+  }
+
+  .container {
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+  }
+}
+
+#charBack {
+  position: fixed;
+  width: 40%;
+  height: auto;
+  bottom: 0px;
+  right: 50px;
+  transform: translateX(-175%)translateY(65%);
+  filter: blur(10px) drop-shadow(0 5px 20px rgba(0,0,0,0.5));
+}
