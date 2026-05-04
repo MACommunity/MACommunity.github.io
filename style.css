@@ -38,18 +38,20 @@ body::before {
 }
 
 .avatar {
-  width: 250px;
+  width: clamp(120px, 25vh, 250px);
   border-radius: 50%;
   margin-bottom: 15px;
 }
 
 h1 {
-  margin-bottom: 5px;
+  font-size: clamp(1.2rem, 3vh, 2rem);
+  margin-bottom: 1vh;
   color: #f2f2f2;
 }
 
 .bio {
-  margin-bottom: 20px;
+  font-size: clamp(0.9rem, 1.8vh, 1.1rem);
+  margin-bottom: 3vh;
   color: #ccc;
 }
 
@@ -59,9 +61,11 @@ h1 {
   background: white;
   color: #333;
   text-decoration: none;
-  padding: 12px;
-  margin: 10px 0;
+  padding: clamp(10px, 1.8vh, 18px);
+  margin: 1.2vh 0;
   border-radius: 25px;
+  font-size: clamp(0.9rem, 2vh, 1.2rem);
+
   transition: 0.3s;
 }
 
@@ -95,8 +99,22 @@ filter: blur(0px);
   height: auto;
   bottom: 0px;
   right: 50px;
+  z-index: 0;
   transform: translateY(35%);
-  filter:drop-shadow(0 5px 20px rgba(0,0,0,0.5))
+  filter:drop-shadow(0 5px 20px rgba(0,0,0,0.5));
+  pointer-events: none;
+}
+
+#charBack {
+  position: fixed;
+  width: 40%;
+  height: auto;
+  bottom: 0px;
+  right: 50px;
+  z-index: -1;
+  transform: translateX(-175%)translateY(65%);
+  filter: blur(10px) drop-shadow(0 5px 20px rgba(0,0,0,0.5));
+  pointer-events: none;
 }
 
 @media (max-width: 768px) {
@@ -110,14 +128,12 @@ filter: blur(0px);
     text-align: center;
     z-index: 2;
   }
-}
 
-#charBack {
-  position: fixed;
+ #charFront {
   width: 40%;
-  height: auto;
-  bottom: 0px;
-  right: 50px;
-  transform: translateX(-175%)translateY(65%);
-  filter: blur(10px) drop-shadow(0 5px 20px rgba(0,0,0,0.5));
+  right: 0px;
+ } 
+
+
+
 }
